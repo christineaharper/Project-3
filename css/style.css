@@ -166,6 +166,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #3c8d89;
+  cursor: pointer;
   transition: background-color 1s;
 }
 
