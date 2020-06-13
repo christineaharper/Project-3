@@ -164,6 +164,11 @@ input[type="submit"] {
   margin-bottom: 1rem;
 }
 
+input[type="submit"]:hover {
+  background-color: #3c8d89;
+  transition: background-color 1s;
+}
+
 input[type="submit"]:focus {
   border: 3px solid #2c7974;
 }
