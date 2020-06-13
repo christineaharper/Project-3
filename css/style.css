@@ -1,0 +1,213 @@
+
+/* ---------------
+ Global
+------------------*/
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Merriweather', serif;  
+  color: #9f9f9f;
+
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: #2d3945;
+  font-size: 2.1rem;
+  padding-top: 2rem;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+/* ---------------
+ Header
+------------------*/
+
+h1 {
+  background-color: #2d3945;
+  color: #fff;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+h2,
+.header-info {
+  text-align: center;
+}
+
+.header-info {
+  padding-bottom: 6rem;
+  margin: 2px 0;
+  border-bottom: 5px solid #2d3945;
+}
+
+/* ---------------
+ Form 
+------------------*/
+
+fieldset {
+  border: none;
+  padding: 0 0 2rem;
+  margin: 0;
+}
+
+legend {
+  color: #2d3945;
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 5rem 0 4rem;
+  border-top: 3px solid #2d3945;
+  width: 100%;
+  display: block;
+}
+
+.form-field label {
+  padding: .5rem 0;
+  display: block;
+}
+
+input[type="text"],
+input[type ="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  background-color: #f0f1f2;
+  padding: 1.2rem;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+input[id="fullname"]::placeholder,
+input[id="email"]::placeholder {
+  text-align: right;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+input::placeholder {
+  font-size: 1.3rem;
+}
+
+input[type="text"]:focus,
+input[type ="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #46698b;
+  transition: background-color 1.5s;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgba(183, 218, 216, .4);
+}
+
+#postalcode {
+  max-width: 35%;
+}
+
+select {
+  border: 2px solid #9f9f9f;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-family: 'Merriweather', serif;  
+}
+
+.newsletter legend {
+  padding: 3rem 0 0;
+}
+
+.newsletter p {
+  margin: 4rem 0 2rem;
+}
+
+.newsletter label {
+  display: block;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0 2rem 2rem 0;
+}
+
+input[type="submit"] {
+  background-color: #4ebbb5;
+  color: #fff;
+  font-size: 2rem;
+  width: 100%;
+  padding: 2rem;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+input[type="submit"]:focus {
+  border: 3px solid #2c7974;
+}
+
+/* ---------------
+ Footer
+------------------*/
+
+footer {
+  background-color: #2d3945;
+  text-align: center;
+  margin-top: 2rem;
+
+  flex-shrink: 0;
+}
+
+footer p {
+  padding: 3rem 0 6rem;
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+/* ---------------
+ Media Queries 
+ < 768px 
+------------------*/
+
+@media only screen and (min-width: 768px) {
+
+
+  .container {
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  .form-field label {
+    display: inline-block;
+    width: 20%;
+  }
+
+  .form-field input {
+    width: 75%;
+  }
+
+}
+
+
