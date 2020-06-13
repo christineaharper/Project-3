@@ -106,6 +106,7 @@ input[id="email"]::placeholder {
 
 input::placeholder {
   font-size: 1.3rem;
+  color: #bbb;
 }
 
 input[type="text"]:focus,
@@ -115,12 +116,12 @@ select:focus,
 textarea:focus {
   outline: none;
   border: 2px solid #46698b;
-  transition: background-color 1.5s;
+  transition: background-color 1.2s;
 }
 
 input:focus,
 textarea:focus {
-  background-color: rgba(183, 218, 216, .4);
+  background-color: #d7dde3;
 }
 
 #postalcode {
