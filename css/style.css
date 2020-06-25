@@ -120,11 +120,14 @@ textarea:focus {
   background-color: #d7dde3;
 }
 
+
+
 #postalcode {
   max-width: 35%;
 }
 
 select {
+  width: 100%;
   border: 2px solid #9f9f9f;
   border-radius: 5px;
   margin-bottom: 2rem;
@@ -148,6 +151,10 @@ select {
 input[type="checkbox"],
 input[type="radio"] {
   margin: 0 2rem 2rem 0;
+}
+
+label.textarea {
+  margin: 3rem 0 1rem 0;
 }
 
 input[type="submit"] {
@@ -211,7 +218,8 @@ footer p {
     flex-basis: 20%;
   }
 
-  .form-field input {
+  .form-field input,
+  .form-field select {
     flex-basis: 80%;
   }
 
